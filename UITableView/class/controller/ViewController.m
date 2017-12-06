@@ -51,6 +51,10 @@
     self.sumPrice.text = [NSString stringWithFormat:@"%d",totalPrice];
 
 }
+- (IBAction)buyClick:(UIButton *)sender {
+    NSLog(@"您购买了%@元商品",self.sumPrice.text);
+}
+
 - (IBAction)clear:(id)sender {
     for (YHWine *wine in self.wineArray) {
         wine.count = 0;
